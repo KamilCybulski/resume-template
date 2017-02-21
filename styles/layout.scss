@@ -1,0 +1,108 @@
+/*====================================================
+                        Variables
+====================================================*/
+//COLORS
+$primary-color: #0AA6E1;
+$accent-color: #028CD5;
+$divider-color: #5B666C;
+$bcg-color: #FFFFFF;
+$primary-text: #212121;
+$secondary-text: #757575;
+$accent-text: #B3E5FC;
+$title-text-color: #FFFFFF;
+$cover-color: rgba(#0AA6E1, 0.5);
+
+//FONTS
+$title-text-font: 'Roboto', sans-serif;
+$reg-text: 'Open Sans', sans-serif;
+
+/*====================================================
+                        Typography
+====================================================*/
+html{
+    font-family: $reg-text;
+    font-size: 15px;
+    @media screen and (min-width: 800px){
+        font-size: 17px;
+    }
+}
+h1{
+    font-family: $title-text-font;
+    font-size: 2.5em;
+    letter-spacing: 3;
+    font-weight: 400;
+}
+h2{
+    font-family: $title-text-font;
+    font-size: 1.5em;
+    letter-spacing: 2;
+    font-weight: 300;
+}
+.primary-nav{
+    font-size: 1.1em;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*====================================================
+                        Navbar
+====================================================*/
+.primary-nav{
+    background-color: $accent-color;
+    width: 100%;
+    height: 70px;
+    color: $accent-text;
+}
+.link-box{
+    margin: auto;
+    width: 320px;
+    height: 100%;
+    text-transform: uppercase;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    a {
+        height: 98%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+    }
+    @media screen and (min-width: 640px){
+        margin-left: 7%;
+    }
+}
+.checked{
+    color: #FFF;
+    border-bottom: 2px solid #FFF;
+}
+
+/*====================================================
+                        Header
+====================================================*/
+header{
+    background-color: $primary-color;
+    color: $title-text-color;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.header-field{
+    width: 320px;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+.face-field{
+    background: -webkit-linear-gradient($cover-color, $cover-color), url("../images/face.png");
+    background: -o-linear-gradient($cover-color, $cover-color), url("../images/face.png");
+    background: linear-gradient($cover-color, $cover-color), url("../images/face.png");
+    background-size: cover;
+    display: none;
+    @media screen and (min-width: 640px){
+        display: block;
+    }
+}
