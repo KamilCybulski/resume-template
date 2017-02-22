@@ -93,7 +93,7 @@ header {
   background: linear-gradient(rgba(10, 166, 225, 0.5), rgba(10, 166, 225, 0.5)), url("../images/face.png");
   background-size: cover;
   display: none; }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 660px) {
     .face-field {
       display: block; } }
 
@@ -104,8 +104,7 @@ main {
   background-color: #FFF;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  height: 800px; }
+  justify-content: space-around; }
 
 /*====================================================
                         Footer

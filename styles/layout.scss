@@ -112,7 +112,7 @@ header{
     background: linear-gradient($cover-color, $cover-color), url("../images/face.png");
     background-size: cover;
     display: none;
-    @media screen and (min-width: 640px){
+    @media screen and (min-width: 660px){
         display: block;
     }
 }
@@ -124,7 +124,6 @@ main{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    height: 800px;
 }
 
 /*====================================================

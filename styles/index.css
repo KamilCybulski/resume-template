@@ -1,2 +1,31 @@
 @import url(normalize.css);
 @import url(layout.css);
+/*====================================================
+                        Grid
+====================================================*/
+.data {
+  height: 300px;
+  width: 90%;
+  border: 2px solid black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; }
+
+.col {
+  background-color: grey;
+  border: 1px dashed black;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around; }
+
+.left-col {
+  width: 33%; }
+
+.right-col {
+  width: 66%; }
+
+@media screen and (max-width: 950px) {
+  .right-col, .left-col {
+    width: 95%; } }
