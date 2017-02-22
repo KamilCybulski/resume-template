@@ -26,6 +26,9 @@ h2 {
 .primary-nav {
   font-size: 1.1em; }
 
+.icon-field, .adress-bar {
+  font-size: .7em; }
+
 a {
   text-decoration: none;
   color: inherit; }
@@ -45,13 +48,16 @@ a {
   height: 100%;
   text-transform: uppercase;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around; }
+  flex-flow: row nowrap; }
   .link-box a {
     height: 98%;
     display: flex;
     flex-flow: column;
-    justify-content: space-around; }
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1; }
+    .link-box a:hover {
+      background-color: #0AA6E1; }
   @media screen and (min-width: 640px) {
     .link-box {
       margin-left: 7%; } }
@@ -68,7 +74,10 @@ header {
   color: #FFFFFF;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  box-shadow: 0 7px 5px #888888;
+  position: relative;
+  z-index: 3; }
 
 .header-field {
   width: 320px;
@@ -87,3 +96,60 @@ header {
   @media screen and (min-width: 640px) {
     .face-field {
       display: block; } }
+
+/*====================================================
+                        Main
+====================================================*/
+main {
+  background-color: #FFF;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  height: 800px; }
+
+/*====================================================
+                        Footer
+====================================================*/
+footer {
+  background-color: #0AA6E1;
+  color: #FFFFFF;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around; }
+  footer .footer-field {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center; }
+
+.icon-field {
+  height: 170px;
+  width: 28%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+  @media screen and (max-width: 540px) {
+    .icon-field {
+      height: 140px; }
+      .icon-field .icon-text {
+        display: none; } }
+
+.icon-box {
+  width: 75px;
+  height: 75px;
+  font-size: 3em;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-color: #028CD5;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center; }
+
+.adress-bar {
+  height: 50px;
+  text-align: center;
+  line-height: 1.6;
+  background-color: #028CD5; }
