@@ -4,18 +4,16 @@
 /*====================================================
                         Grid
 ====================================================*/
-.data{
+.info-field{
     height: 300px;
-    width: 90%;
-    border: 2px solid black;
+    width: 85%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+    border: 2px solid black;
 }
 .col{
-    background-color: grey;
-    border: 1px dashed black;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;

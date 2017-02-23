@@ -104,7 +104,8 @@ main {
   background-color: #FFF;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin: 60px 3%; }
 
 /*====================================================
                         Footer
