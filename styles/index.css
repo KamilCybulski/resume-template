@@ -230,6 +230,10 @@ footer {
   font-weight: 700; }
 
 /*=============SOFTWARE=====================*/
+.software-wrapper td {
+  width: 150px;
+  height: 30px; }
+
 /*=============HOBBIES=====================*/
 .hobbies-section {
   width: 100%;
