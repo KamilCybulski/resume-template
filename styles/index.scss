@@ -136,10 +136,31 @@ progress::-moz-progress-bar{
     }
 }
 
-/*=============WORK=====================*/
+/*=============WORK & EDU=====================*/
+ul{
+    color: $accent-color;
+    .list-item{
+        color: $primary-text;
+    }
+}
+.list-item{
+    margin-bottom: 25px;
+}
+.job-title{
+    display: inline-block;
+    width: 80%;
+    font-weight: 700;
+}
+.time{
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+    font-weight: 700;
+}
+.job-description{
+    font-weight: 300;
+    font-size: .9em;
+}
 
 
 /*=============SKILLS=====================*/
-
-
-/*=============EXPERIENCE=====================*/

@@ -279,6 +279,28 @@ progress::-moz-progress-bar {
   .hobbies-section {
     width: 419.77px; } }
 
-/*=============WORK=====================*/
+/*=============WORK & EDU=====================*/
+ul {
+  color: #028CD5; }
+  ul .list-item {
+    color: #212121; }
+
+.list-item {
+  margin-bottom: 25px; }
+
+.job-title {
+  display: inline-block;
+  width: 80%;
+  font-weight: 700; }
+
+.time {
+  display: inline-block;
+  width: 20%;
+  text-align: right;
+  font-weight: 700; }
+
+.job-description {
+  font-weight: 300;
+  font-size: .9em; }
+
 /*=============SKILLS=====================*/
-/*=============EXPERIENCE=====================*/
