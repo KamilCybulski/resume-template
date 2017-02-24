@@ -251,6 +251,10 @@ footer {
   .hobby-field icon-text {
     color: #000; }
 
+@media screen and (min-width: 554px) and (max-width: 950px) {
+  .hobbies-section {
+    width: 419.77px; } }
+
 /*=============WORK=====================*/
 /*=============SKILLS=====================*/
 /*=============EXPERIENCE=====================*/
