@@ -23,6 +23,11 @@ h2 {
   letter-spacing: 2;
   font-weight: 300; }
 
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
+  letter-spacing: 2; }
+
 .primary-nav {
   font-size: 1.1em; }
 
@@ -71,11 +76,11 @@ a {
 ====================================================*/
 header {
   background-color: #0AA6E1;
-  color: #FFFFFF;
+  color: #FFF;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  box-shadow: 0 7px 5px #888888;
+  box-shadow: 0 7px 5px #212121;
   position: relative;
   z-index: 3; }
 
@@ -105,14 +110,14 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  margin: 60px 3%; }
+  margin: 0 3%; }
 
 /*====================================================
                         Footer
 ====================================================*/
 footer {
   background-color: #0AA6E1;
-  color: #FFFFFF;
+  color: #FFF;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around; }

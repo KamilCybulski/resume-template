@@ -1,26 +1,28 @@
 @import 'normalize.css';
-@import 'layout.css';
+@import 'layout.scss';
 
 /*====================================================
                         Grid
 ====================================================*/
 .info-field{
-    height: 300px;
     width: 85%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: column wrap;
+    justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    margin-bottom: 40px;
 }
 .col{
+    padding: 60px 0;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-around;
+    
 }
 .left-col{
     width: 33%;
+    box-shadow: 7px 0 5px #888;
 }
 .right-col{
     width: 66%;
@@ -28,5 +30,84 @@
 .right-col, .left-col{
     @media screen and (max-width: 950px){
         width: 95%;
+        box-shadow: none;
     }
 }
+
+/*====================================================
+                        Divider
+====================================================*/
+.divider{
+    background-color: $divider-color;
+    padding: 50px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.divider-text{
+    width: 76.165%;
+    color: $title-text-color;
+    line-height: 1.4;
+    letter-spacing: 2;
+    font-weight: 300;
+    @media screen and (min-width: 950px){
+        width: 86.2734%;
+    }
+}
+
+/*====================================================
+                    Main content
+====================================================*/
+
+/*=============PERSONAL=====================*/
+.personal-section{
+    h3{
+        text-align: left;
+        color: $accent-color;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    td{
+        width: 150px;
+        height: 60px;
+    }
+    tr{
+        border-bottom: 1px solid #888;
+    }
+}
+.tb-prop{
+    font-weight: 700;
+}
+
+/*=============SOFTWARE=====================*/
+
+
+/*=============HOBBIES=====================*/
+.hobbies-section{
+    flex-flow:row wrap;
+    .icon-box{
+        margin: 10px;
+    }
+}
+.hobby-field{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: .8em;
+    .icon-box{
+        color: $title-text-color;
+    }
+    icon-text{
+        color: #000;
+    }
+}
+
+/*=============WORK=====================*/
+
+
+/*=============SKILLS=====================*/
+
+
+/*=============EXPERIENCE=====================*/
