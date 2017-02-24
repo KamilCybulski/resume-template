@@ -61,10 +61,6 @@
 
 /*=============PERSONAL=====================*/
 .personal-section{
-    h3{
-        text-align: left;
-        color: $accent-color;
-    }
     table{
         border-collapse: collapse;
     }
@@ -85,17 +81,20 @@
 
 /*=============HOBBIES=====================*/
 .hobbies-section{
+    width: 100%;
+    display: flex;
     flex-flow:row wrap;
-    .icon-box{
-        margin: 10px;
-    }
+    justify-content: space-around;
+    align-items: center;
 }
 .hobby-field{
+    width: 75px;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-size: .8em;
+    margin: 15px;
     .icon-box{
         color: $title-text-color;
     }

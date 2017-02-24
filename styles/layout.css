@@ -26,7 +26,9 @@ h2 {
 h3 {
   font-family: "Roboto", sans-serif;
   font-size: 1.3em;
-  letter-spacing: 2; }
+  letter-spacing: 2;
+  color: #028CD5;
+  text-align: center; }
 
 .primary-nav {
   font-size: 1.1em; }

@@ -27,7 +27,9 @@ h2 {
 h3 {
   font-family: "Roboto", sans-serif;
   font-size: 1.3em;
-  letter-spacing: 2; }
+  letter-spacing: 2;
+  color: #028CD5;
+  text-align: center; }
 
 .primary-nav {
   font-size: 1.1em; }
@@ -214,10 +216,6 @@ footer {
                     Main content
 ====================================================*/
 /*=============PERSONAL=====================*/
-.personal-section h3 {
-  text-align: left;
-  color: #028CD5; }
-
 .personal-section table {
   border-collapse: collapse; }
 
@@ -234,16 +232,20 @@ footer {
 /*=============SOFTWARE=====================*/
 /*=============HOBBIES=====================*/
 .hobbies-section {
-  flex-flow: row wrap; }
-  .hobbies-section .icon-box {
-    margin: 10px; }
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; }
 
 .hobby-field {
+  width: 75px;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  font-size: .8em; }
+  font-size: .8em;
+  margin: 15px; }
   .hobby-field .icon-box {
     color: #FFF; }
   .hobby-field icon-text {
