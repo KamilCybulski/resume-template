@@ -83,6 +83,26 @@
         height: 30px;
     }
 }
+progress{                           //Lots of mess in here cause of inconsistent progress implementation in browsers
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 2px;
+    width: 150px;
+    background: #888;
+    color: $accent-color;
+}
+progress::-webkit-progress-bar{
+    background: #888;
+    border-radius: 2px;
+}
+progress::-webkit-progress-value{
+    background-color: $accent-color;
+    border-radius: 2px;
+}
+progress::-moz-progress-bar{
+    background: $accent-color;
+}
 
 
 
