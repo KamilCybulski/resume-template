@@ -5,6 +5,7 @@
 /*====================================================
                         Typography
 ====================================================*/
+@import url(circle.css);
 html {
   font-family: "Open Sans", sans-serif;
   font-size: 15px; }
@@ -29,7 +30,8 @@ h3 {
   font-size: 1.3em;
   letter-spacing: 2;
   color: #028CD5;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 30px; }
 
 .primary-nav {
   font-size: 1.1em; }
@@ -178,14 +180,20 @@ footer {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-between; }
 
 .left-col {
   width: 33%;
   box-shadow: 7px 0 5px #888; }
+  @media screen and (max-width: 950px) {
+    .left-col {
+      padding-bottom: 0; } }
 
 .right-col {
   width: 66%; }
+  @media screen and (max-width: 950px) {
+    .right-col {
+      padding-top: 0; } }
 
 @media screen and (max-width: 950px) {
   .right-col, .left-col {
@@ -304,3 +312,8 @@ ul {
   font-size: .9em; }
 
 /*=============SKILLS=====================*/
+.skills-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; }

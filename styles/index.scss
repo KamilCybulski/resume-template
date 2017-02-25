@@ -1,5 +1,6 @@
 @import 'normalize.css';
 @import 'layout.scss';
+@import 'circle.css';
 
 /*====================================================
                         Grid
@@ -17,15 +18,21 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     
 }
 .left-col{
     width: 33%;
     box-shadow: 7px 0 5px #888;
+    @media screen and (max-width: 950px){
+        padding-bottom: 0;
+    }
 }
 .right-col{
     width: 66%;
+    @media screen and (max-width: 950px){
+        padding-top: 0;
+    }
     }
 .right-col, .left-col{
     @media screen and (max-width: 950px){
@@ -164,3 +171,9 @@ ul{
 
 
 /*=============SKILLS=====================*/
+.skills-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
