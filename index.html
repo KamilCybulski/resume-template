@@ -14,7 +14,7 @@
         <script src="https://use.fontawesome.com/51cf01f875.js"></script>
     </head>    
 
-    <body>
+    <body itemscope itemtype="http://schema.org/Person">
         <nav class='primary-nav'>
             <div class="link-box">
                 <a href="#">Hello</a>
@@ -26,8 +26,8 @@
         <header>
             <div class="header-field">
                 <div>
-                    <h1>Some Random Guy</h1>
-                    <h2>Lorem ipsum designer</h2>
+                    <h1 itemprop="name">Some Random Guy</h1>
+                    <h2 itemprop="jobTitle">Lorem ipsum designer</h2>
                 </div>
             </div>
             <div class="header-field face-field"></div>
@@ -62,7 +62,7 @@
                                 <td class="tb-prop">Languages</td><td class="tb-value">English</td>
                             </tr>
                             <tr>
-                                <td class="tb-prop">Telephone</td><td class="tb-value">666 666 666</td>
+                                <td class="tb-prop">Telephone</td><td class="tb-value" itemprop="telephone">666 666 666</td>
                             </tr>
                         </table>
                    </div>
@@ -262,7 +262,16 @@
                 ></div>
 
             </div>
-            <div class="footer-field adress-bar">154 Deephole st. Bumretch, Nebrahoma. Call 666-666-666. Email someguy@somemail.com. www.someguy.com</div>
+            <div class="footer-field adress-bar">
+                <div>154 Deephole st. Bumretch, Nebrahoma.</div> 
+                <div>
+                    <a href="mailto: someguy@somemail.com">
+                    <span itemprop="email">Email someguy@somemail.com.</span>
+                    </a>
+                </div>
+                <div><a href="#" itemprop="url">www.someguy.com</a></div>
+
+            </div>
         </footer>
     </body>
 </html>

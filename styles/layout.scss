@@ -151,6 +151,16 @@ footer{
         justify-content: space-around;
         align-items: center;
     }
+    .adress-bar{
+    min-height: 50px;
+    line-height: 1.6;
+    background-color: $accent-color;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
 }
 .icon-field{
     height:170px;
@@ -178,10 +188,5 @@ footer{
     justify-content: space-around;
     align-items: center;  
 }
-.adress-bar{
-    height:50px;
-    text-align: center;
-    line-height: 1.6;
-    background-color: $accent-color
-}
+
 

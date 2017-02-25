@@ -132,6 +132,15 @@ footer {
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center; }
+  footer .adress-bar {
+    min-height: 50px;
+    line-height: 1.6;
+    background-color: #028CD5;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center; }
 
 .icon-field {
   height: 170px;
@@ -157,12 +166,6 @@ footer {
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center; }
-
-.adress-bar {
-  height: 50px;
-  text-align: center;
-  line-height: 1.6;
-  background-color: #028CD5; }
 
 /*====================================================
                         Grid
