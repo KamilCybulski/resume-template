@@ -139,8 +139,9 @@ footer {
     text-align: center;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center; }
+    justify-content: space-between; }
+    footer .adress-bar div {
+      margin: 7px; }
 
 .icon-field {
   height: 170px;
