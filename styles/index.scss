@@ -142,6 +142,11 @@ progress::-moz-progress-bar{
         width: 419.77px;  //This is just a hack to keep hobbies section display 2 rows of 3 icons on tablets
     }
 }
+@media screen and (min-width: 1300px){
+    .hobbies-section{
+        width: 419.77px; //To keep 2 rows of 3 icons on wide screens
+    }
+}
 
 /*=============WORK & EDU=====================*/
 ul{

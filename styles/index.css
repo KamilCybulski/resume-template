@@ -37,7 +37,7 @@ h3 {
   font-size: 1.1em; }
 
 .icon-field, .adress-bar {
-  font-size: .7em; }
+  font-size: 0.7em; }
 
 a {
   text-decoration: none;
@@ -230,11 +230,9 @@ footer {
 /*=============PERSONAL=====================*/
 .personal-section table {
   border-collapse: collapse; }
-
 .personal-section td {
   width: 150px;
   height: 60px; }
-
 .personal-section tr {
   border-bottom: 1px solid #888; }
 
@@ -290,7 +288,9 @@ progress::-moz-progress-bar {
 @media screen and (min-width: 554px) and (max-width: 950px) {
   .hobbies-section {
     width: 419.77px; } }
-
+@media screen and (min-width: 1300px) {
+  .hobbies-section {
+    width: 419.77px; } }
 /*=============WORK & EDU=====================*/
 ul {
   color: #028CD5; }
@@ -321,3 +321,5 @@ ul {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center; }
+
+/*# sourceMappingURL=index.css.map */

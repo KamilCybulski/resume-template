@@ -1,3 +1,6 @@
 #VS Code stuff:
 .vscode/*
 gulpfile.js
+
+#sass-cache files
+.sass-cache/
